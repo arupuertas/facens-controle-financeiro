@@ -1,8 +1,12 @@
-class Initialize():
-    #Método Construtor
-    def __init__(self):
-        self.__transactions = []
+from models.transaction import Transaction
 
+'''
+adicionar opção 3
+pesquisar por tipo de transação
+deletar transação 
+'''
+
+class Initialize():
     def show_menu(self):
         print(40 * '-')
         print('Bem-Vindo ao Controle Financeiro')
@@ -25,14 +29,14 @@ class Initialize():
         value = input('Informe o valor: ')
         description = input('Informe a descrição: ')
 
-        self.__transactions.append(
-            (operation, value, description)
-        )
-        
+        t = Transaction(operation, value, description)
+        t.save()
+        #apagando o objeto depois que uso, não é obrigado a usar
+        del t
     
     def to_view(self):
-        for transaction in self.__transactions:
-            print(f'Operação: {transaction[0]} - Valor: {transaction[1]} - Descrição: {transaction[2]}')
+        #instanciando 
+        Transaction().view()
 
     def to_go_out():
         print('Obrigado e Volte Sempre!')
