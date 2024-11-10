@@ -43,14 +43,15 @@ class Initialize():
         
 if __name__ == '__main__':
     init = Initialize()
-    option = ''
-    while option != 3:
-        init.show_menu()
-        init.choose_option()
-        
+    option = init.choose_option()
+
+    while option != '3':
         if option == '1':
             init.to_add()
-        elif option == '2':
+        elif option =='2':
             init.to_view()
-        elif option == '3':
+        elif option =='3':
             init.to_go_out()
+        else:
+            print('Opção Não Disponível')
+        
