@@ -38,14 +38,17 @@ class Initialize():
         #instanciando 
         Transaction().view()
 
-    def to_go_out():
-        print('Obrigado e Volte Sempre!')
+    def to_go_out(self):
+        print('\nObrigado e Volte Sempre!')
         
 if __name__ == '__main__':
     init = Initialize()
-    option = init.choose_option()
+    option = ''
 
     while option != '3':
+        init.show_menu()
+        option = init.choose_option()
+
         if option == '1':
             init.to_add()
         elif option =='2':

@@ -13,4 +13,5 @@ class Transaction():
 
     def view(self):
         for line in self.__utils.read_file():
+            
             print(line)

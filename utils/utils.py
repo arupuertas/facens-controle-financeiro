@@ -7,7 +7,8 @@ class Utils():
     def read_file(self):
         with open(self.__confing.file_output, 'r') as file:
             #map retorna um ponteiro, por isso preciso fazer um casting para uma lista explicitamente
-            return list(map(lambda x: x.replace('\n', ''), file.readline()))
+            return list(map(lambda x: x.replace('\n', ''), file.readlines()))
+
 
     #metodo dentro de classe colocado _ no type para entender que não é uma palavra reservada
     def write_file(self, _type, value, description):
