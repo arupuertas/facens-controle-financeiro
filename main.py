@@ -13,7 +13,8 @@ class Initialize():
         print(40 * '-')
         print('1 - Adicionar Transação')
         print('2 - Visualizar Transações')
-        print('3 - Sair')
+        print('3 - Deletar Transação')
+        print('4 - Sair')
 
     def choose_option(self):
         option = input('\nEscolha uma das opções: ')
@@ -40,20 +41,25 @@ class Initialize():
 
     def to_go_out(self):
         print('\nObrigado e Volte Sempre!')
+
+    def to_delete(self):
+        Transaction().delete()
         
 if __name__ == '__main__':
     init = Initialize()
     option = ''
 
-    while option != '3':
+    while option != '4':
         init.show_menu()
         option = init.choose_option()
 
         if option == '1':
             init.to_add()
-        elif option =='2':
+        elif option == '2':
             init.to_view()
-        elif option =='3':
+        elif option == '3':
+            init.to_delete()
+        elif option == '4':
             init.to_go_out()
         else:
             print('Opção Não Disponível')

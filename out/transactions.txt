@@ -1,8 +1,2 @@
-
-Operação: retirada - Valor: 100 - Descrição: retirando 100
-Operação: 2 - Valor: 2 - Descrição: 
 Operação: 2 - Valor: 2 - Descrição: 2
-Operação: 2 - Valor: 2 - Descrição: 2
-Operação: teste entrada - Valor: 100 - Descrição: teste entrada de valor
-Operação: 100 - Valor: 100 - Descrição: 100
-Operação: 1000 - Valor: 1000 - Descrição: 1000
+Operação: 3 - Valor: 3 - Descrição: 3Operação: 1 - Valor: 1 - Descrição: 1

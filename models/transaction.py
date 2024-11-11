@@ -13,5 +13,10 @@ class Transaction():
 
     def view(self):
         for line in self.__utils.read_file():
-            
             print(line)
+    
+    def delete(self):
+        for line in self.__utils.delete_line():
+            print(line)
+
+    
