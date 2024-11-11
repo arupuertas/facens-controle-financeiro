@@ -1,5 +1,2 @@
-
-Operação: retirada - Valor: 100 - Descrição: retirando 100
-Operação: 2 - Valor: 2 - Descrição: 
 Operação: 2 - Valor: 2 - Descrição: 2
-Operação: 2 - Valor: 2 - Descrição: 2
+Operação: 3 - Valor: 3 - Descrição: 3Operação: 1 - Valor: 1 - Descrição: 1
